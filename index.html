@@ -20,10 +20,6 @@
     body{
       font-family: 'Inter', sans-serif;
       background-color: var(--color5);
-      margin: 0;
-      padding: 0;
-    }
-    #global{
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -33,7 +29,7 @@
       background-color: var(--color4);
       padding:30px;
       border-radius: 15px;
-      width: 20%;
+      width: 25%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -62,6 +58,7 @@
       color: var(--color2);
       font-size: smaller;
       font-weight: 200;
+      text-align: center;
     }
     .part3{
       text-align: center;
@@ -80,30 +77,32 @@
       background-color: var(--color1);
       cursor: pointer;
     }
+    @media screen and (max-width: 450px){
+      #tab{ width: 70%;}
+    }
+    @media screen and (max-width: 900px) and (min-width:450px){
+      #tab{ width: 40%;}
+    }
   </style>
 </head>
 <body>
-
-  <div id="global">
-    <div id="tab">
-      <img src="assets/images/avatar-jessica.jpeg" alt="">
-      <div class="part1">
-        <h3>Jessica Randall</h3> 
-        <h4>London, United Kingdom</h4> 
-      </div>
-      <div class="part2">
-        <p>"Front-end developer and avid reader."</p>
-      </div>
-      <div class="part3">
-        <p>GitHub</p> 
-        <p>Frontend Mentor</p>
-        <p>LinkedIn</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
-      </div>
-    
+  <div id="tab">
+    <img src="assets/images/avatar-jessica.jpeg" alt="">
+    <div class="part1">
+      <h3>Jessica Randall</h3> 
+      <h4>London, United Kingdom</h4> 
     </div>
+    <div class="part2">
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="part3">
+      <p>GitHub</p> 
+      <p>Frontend Mentor</p>
+      <p>LinkedIn</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+    </div>
+  
   </div>
-
 </body>
 </html>
