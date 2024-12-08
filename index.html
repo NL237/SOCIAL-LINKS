@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+    :root{
+      --color1: hsl(75, 94%, 57%);
+      --color2: hsl(0, 0%, 100%);
+      --color3: hsl(0, 0%, 20%);
+      --color4: hsl(0, 0%, 12%);
+      --color5: hsl(0, 0%, 8%);
+    }
+    body{
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color5);
+      margin: 0;
+      padding: 0;
+    }
+    #global{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #tab{
+      background-color: var(--color4);
+      padding:30px;
+      border-radius: 15px;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #tab img{
+      width: 30%;
+      border-radius: 100%;
+      margin-bottom: -6px;
+    }
+    .part1{
+      text-align: center;
+    }
+    h3{
+      color: var(--color2);
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: -8px;
+    }
+    h4{
+      color: var(--color1);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .part2 p{
+      color: var(--color2);
+      font-size: smaller;
+      font-weight: 200;
+    }
+    .part3{
+      text-align: center;
+      width: 100%;
+    }
+    .part3 p{
+      color: var(--color2);
+      font-weight: 600;
+      background-color: var(--color3);
+      border-radius: 7px;
+      padding: 10px;
+      font-size: 13px;
+    }
+    .part3 p:hover{
+      color: var(--color5);
+      background-color: var(--color1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="global">
+    <div id="tab">
+      <img src="assets/images/avatar-jessica.jpeg" alt="">
+      <div class="part1">
+        <h3>Jessica Randall</h3> 
+        <h4>London, United Kingdom</h4> 
+      </div>
+      <div class="part2">
+        <p>"Front-end developer and avid reader."</p>
+      </div>
+      <div class="part3">
+        <p>GitHub</p> 
+        <p>Frontend Mentor</p>
+        <p>LinkedIn</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+    
+    </div>
+  </div>
+
+</body>
+</html>
